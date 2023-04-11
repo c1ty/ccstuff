@@ -32,7 +32,7 @@ Make sure that both the turtle and the control-computer have an activated rednet
 
 After installing all required software, you may fuel-up your turtle (not strictly required, unless you want 
 to move it). Then you can run `rx.lua` on the turtle, after obtaining it's id via `id`. If 
-`rx.lua` is running, you can start `tx.lua` on the control computer. You wille be prompted to enter the receiver 
+`rx.lua` is running, you can start `tx.lua` on the control computer. You will be prompted to enter the receiver 
 id:
 <p align="center">
     <img src="https://github.com/c1ty/ccstuff/raw/main/turtle_remote/images/id_prompt.png" width=300>
@@ -44,7 +44,7 @@ After entering the desired id, you are greeted with the following screen:
     <img src="https://github.com/c1ty/ccstuff/raw/main/turtle_remote/images/remote_main.png" width=300>
 </p>
 
-I apologize for the busy layout. We have four main columns of action-buttons: `dig` for diggin, 
+I apologize for the busy layout. We have four main columns of action-buttons: `dig` for digging, 
 `mov` for movement, `det` for detection and `plc` for placement.
 
 The digging buttons are labelled `D` for down, `U` for up and `F` for forward. Movement buttons are labelled 
@@ -58,6 +58,7 @@ info button will provide you with the following view:
 <p align="center">
     <img src="https://github.com/c1ty/ccstuff/raw/main/turtle_remote/images/info.png" width=300>
 </p>
+
 The field `fuel` represents the current fuel-level of the turtle. The 4 by 4 grid of numbers (here zeros)
 represent the slots and the number of items in them.
 
