@@ -17,8 +17,38 @@ respective actions is called.
 
 ## How to use it
 
+The two main functions you need are `add_action_button()` and `add_toggle_button()`. Adding buttons requires some 
+common elements, like:
+* position
+* size
+* text
+* colors
 
-Below is a very simple example:
+Additionally, you need to specify a key to identify the button. **Keep in mind, that the API does not 
+prevent you from adding duplicate ids**. You can use the ID of a button, i.e. a toggle-button, to read it's state via 
+`buttons.buttons[id]["state"]`. The two functions have the following signatures (in pseudo-code):
+
+```
+add_action_button(id, x, y, width, height, msg, action, color, color_flash, fg)
+add_toggle_button(id, x, y, width, height, msg, color_active, color_inactive, fg)
+```
+
+| Paramater      | Type     | Description                | Button Type |
+|----------------|----------|----------------------------|-------------|
+| id             | string   | id for later referencing   | both        |
+| x              | int      | top-left x-coordinate      | both        |
+| y              | int      | top-left y-coordinate      | both        |
+| width          | int      | button width               | both        |
+| height         | int      | button height              | both        |
+| msg            | string   | text to display on button  | both        |
+| action         | function | gets called on click       | action      |
+| color          | int      | normal display color       | action      |
+| color_flash    | int      | color flashes when pressed | action      |
+| fg             | int      | foreground color           | both        |
+| color_active   | int      | draw-color for state=true  | toggle      |
+| color_inactive | int      | draw-color for state=false | toggle      |
+
+### Simple Usage example
 ```lua
 os.loadAPI("buttons")
 
@@ -47,6 +77,20 @@ while rcond do
     buttons.check_click()
 end
 ```
+Below is the view in a pocket-computer when you start the program.
+<p align="center">
+    <img src="https://github.com/c1ty/ccstuff/raw/main/buttons/images/example_startup.png" width="300">
+</p>
+
+If you toggle `toggle` by clicking on it:
+<p align="center">
+    <img src="https://github.com/c1ty/ccstuff/raw/main/buttons/images/toggle_inactive.png" width=300>
+</p>
+
+Pressing `Hi` prints a friendly message at the top of the screen:
+<p align="center">
+    <img src="https://github.com/c1ty/ccstuff/raw/main/buttons/images/hello_world.png" width=300>
+</p>
 
 ## Future Plans
 
