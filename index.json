@@ -1,0 +1,27 @@
+{
+    "buttons": {
+        "title": "Buttons API",
+        "description": [
+            "A simple API for adding buttons (toggle and action)",
+            "provides functions for adding buttons (reference by id)",
+            "method for drawing all buttons and waiting for click events"
+        ],
+        "src": {
+            "buttons": "https://raw.githubusercontent.com/c1ty/ccstuff/main/buttons/buttons.lua"
+        }
+    },
+    "turtle-remote": {
+        "title": "Turtle Remote",
+        "description": [
+            "A rednet-based turtle-remote-control",
+            "allows for easy turtle manipulation"
+        ],
+        "src": {
+            "tx": "https://raw.githubusercontent.com/c1ty/ccstuff/main/turtle_remote/tx.lua",
+            "rx": "https://raw.githubusercontent.com/c1ty/ccstuff/main/turtle_remote/rx.lua"
+        },
+        "dep": [
+            "buttons"
+        ]
+    }
+}
