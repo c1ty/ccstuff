@@ -1,6 +1,8 @@
 {
+    "repository": "ccstuff",
     "buttons": {
         "title": "Buttons API",
+        "author": "c1tycraft3r",
         "description": [
             "A simple API for adding buttons (toggle and action)",
             "provides functions for adding buttons (reference by id)",
@@ -12,6 +14,7 @@
     },
     "turtle-remote": {
         "title": "Turtle Remote",
+        "author": "c1tycraft3r",
         "description": [
             "A rednet-based turtle-remote-control",
             "allows for easy turtle manipulation"
