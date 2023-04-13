@@ -11,7 +11,8 @@
             ],
             "src": {
                 "buttons": "https://raw.githubusercontent.com/c1ty/ccstuff/main/buttons/buttons.lua"
-            }
+            },
+            "doc": "github.com/c1ty/ccstuff/tree/main/buttons"
         },
         "turtle-remote": {
             "title": "Turtle Remote",
@@ -26,7 +27,8 @@
             },
             "dep": [
                 "buttons"
-            ]
+            ],
+            "doc": "github.com/c1ty/ccstuff/tree/main/turtle_remote"
         }
     }
 }
